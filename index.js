@@ -58,7 +58,7 @@ const app = require('express')();
 app.set('view engine', 'ejs');
 
 const fs = require('fs');
-const session = require('express-session')
+const session = require('cookie-session');
 const http = require('http').Server(app);
 const io = require('socket.io')(http);
 const bodyParser = require("body-parser");
