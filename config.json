@@ -1,11 +1,5 @@
 [
 {
-    "host": "localhost",
-    "user": "root",
-    "password": "",
-    "database": "mcq"
-},
-{
     "host": "remotemysql.com",
     "user": "VOyrt22T12",
     "password": "VN8pgpVbqn",
