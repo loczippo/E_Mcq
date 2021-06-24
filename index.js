@@ -71,6 +71,7 @@ const md5 = require('md5');
 const os = require("os");
 
 const mysql = require('mysql');
+
 const connection = mysql.createConnection(
     JSON.parse(fs.readFileSync(__dirname + "/config.json"))[0]
 );
@@ -90,7 +91,7 @@ let transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
         user: 'loc018101084@tgu.edu.vn',
-        pass: '123456'
+        pass: '01699949764'
     }
 });
 
