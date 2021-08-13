@@ -90,14 +90,14 @@ connection.connect(err => {
 let transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'loc018101084@tgu.edu.vn',
-        pass: 'passcuaban'
+        user: 'yourmail',
+        pass: 'yourpass'
     }
 });
 
 function SendMail(email, username, link) {
     let mailOptions = {
-        from: 'tgu.edu.vn',
+        from: 'yourmail',
         to: email,
         subject: 'Xac minh Gmail',
         text: 'Bấm vào đây để xác nhận: ' + link
@@ -832,7 +832,7 @@ app.post('/emailauth', (req, res) => {
 })
 
 app.get('/recovery', (req, res) => {
-    res.json({'ERR_404':'Lộc chưa hoàn thành chức năng này, vui lòng gặp cố vấn để được cấp lại mất khẩu'});
+    res.json({'ERR_404':'chưa hoàn thành chức năng này, vui lòng gặp cố vấn để được cấp lại mất khẩu'});
 })
 
 app.post('/home/logout', (req, res) => {
